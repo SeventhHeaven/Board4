@@ -18,9 +18,11 @@ class  Board4 extends JFrame {
   Board4() {
     this.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
     this.setTitle( "Board4" );
-    this.setSize( ( size * yoko ) + ( padding * 2 ), ( size * tate ) + ( padding * 2 ) );
+//    this.setSize( ( size * yoko ) + ( padding * 2 ), ( size * tate ) + ( padding * 2 ) );
     this.setLocationRelativeTo( null );
     c = this.getContentPane();
+    c.setPreferredSize( new Dimension( ( size * yoko ) + ( padding * 2 ), ( size * tate ) + ( padding * 2 ) ) );
+    this.pack();
     c.setLayout( null );
 
     ArrayList<Integer> l = new ArrayList<Integer>();
